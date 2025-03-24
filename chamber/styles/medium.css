@@ -1,0 +1,102 @@
+/* Medium CSS - Applies to screens 640px and larger */
+@media screen and (min-width: 640px) {
+    /* Header Adjustments */
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .logo {
+        width: 60px;
+    }
+    
+    .site-name h1 {
+        font-size: 1.4rem;
+    }
+    
+    .site-name p {
+        font-size: 1rem;
+    }
+    
+    /* Navigation */
+    #hamburger-btn {
+        display: none;
+    }
+    
+    #primary-nav {
+        display: flex;
+        justify-content: flex-end; /* Align menu to the right */
+    }
+    
+    #primary-nav li {
+        border-bottom: none;
+        padding: 1rem 0.5rem;
+    }
+    
+    /* Main Content Layout */
+    .home-main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "hero hero"
+            "events events"
+            "weather forecast"
+            "spotlight spotlight";
+    }
+    
+    .hero-section {
+        grid-area: hero;
+        height: 400px;
+    }
+    
+    .events-section {
+        grid-area: events;
+    }
+    
+    .weather-section {
+        grid-area: weather;
+    }
+    
+    .forecast-section {
+        grid-area: forecast;
+    }
+    
+    .spotlight-section {
+        grid-area: spotlight;
+    }
+    
+    /* Hero Section */
+    .hero-overlay h2 {
+        font-size: 2.2rem;
+    }
+    
+    /* Spotlight Section */
+    .spotlight-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    /* Footer Adjustments */
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+    
+    .footer-logo {
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+    
+    .footer-logo img {
+        margin-right: 1rem;
+        margin-bottom: 0;
+    }
+    
+    .footer-base {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Boise Chamber of Commerce - Promoting local business interests and community development in Boise">
+    <meta name="author" content="Andrianasy Jean Rossy Lahimpagnahy">
+    
+    <title>Boise Chamber of Commerce</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Boise Chamber of Commerce Logo" class="logo">
+                </a>
+                <div class="site-name">
+                    <h1>Boise</h1>
+                    <p>Chamber of Commerce</p>
+                </div>
+            </div>
+            <div class="header-right">
+                
+                <button id="hamburger-btn" aria-label="Toggle Navigation Menu">
+                    <span>&#9776;</span>
+                </button>
+                <div class="dark-mode-toggle">
+                    <span>🌙</span>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul id="primary-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="date-banner">
+            <p id="current-date"></p>
+        </div>
+    </header>
+
+    <main class="home-main">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/chamber-small.jpg">
+                <source media="(max-width: 800px)" srcset="images/chamber-medium.jpg">
+                <img src="images/chamber-large.jpg" alt="Boise cityscape" class="hero-image">
+            </picture>
+            <div class="hero-overlay">
+                <h2>Welcome to Boise</h2>
+                <p>Where Business Meets Opportunity</p>
+                <a href="join.html" class="cta-button">Join the Chamber</a>
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section class="events-section">
+            <h2>Current Events</h2>
+            <div class="event-card">
+                <h3>Business Networking Breakfast</h3>
+                <p class="event-date">April 5, 2025 - 8:00 AM</p>
+                <p>Join local entrepreneurs and business leaders for our monthly networking breakfast. Share ideas, build connections, and grow your business network.</p>
+                <p class="event-location">Location: Grand Hotel Boise</p>
+                <a href="#" class="event-link">Learn More</a>
+            </div>
+        </section>
+
+        <!-- Weather Section -->
+        <section class="weather-section">
+            <h2>Current Weather</h2>
+            <div class="weather-card">
+                <div class="weather-icon-temp">
+                    <img id="weather-icon" src="" alt="Weather icon">
+                    <p><span id="current-temp"></span>°C</p>
+                </div>
+                <p id="weather-description"></p>
+                <div class="weather-details">
+                    <p>Humidity: <span id="humidity"></span>%</p>
+                    <p>Wind Speed: <span id="wind-speed"></span> mph</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Forecast Section -->
+        <section class="forecast-section">
+            <h2>3-Day Forecast</h2>
+            <div class="forecast-container" id="forecast-container">
+                <!-- Forecast data will be inserted here by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Spotlight Section -->
+        <section class="spotlight-section">
+            <h2>Business Spotlights</h2>
+            <div class="spotlight-container" id="spotlight-container">
+                <!-- Spotlight data will be inserted here by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Boise Chamber of Commerce Logo">
+                <div class="footer-name">
+                    <h3>Boise Chamber of Commerce</h3>
+                    <p>10 Rue De La Paix</p>
+                    <p>Boise, Tananako 999</p>
+                </div>
+            </div>
+            <div class="footer-social">
+                <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="footer-contact">
+                <p>info@Boisecc.org</p>
+                <p>(223) 555-2300</p>
+                <p><a href="https://maps.google.com" target="_blank">Location Map</a></p>
+            </div>
+        </div>
+        <div class="footer-base">
+            <p>&copy; <span id="current-year"></span> Boise Chamber of Commerce</p>
+            <p>Andrianasy Jean Rossy Lahimpagnahy</p>
+            <p>WDD231 Project</p>
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/spotlight.js"></script>
+</body>
+</html>

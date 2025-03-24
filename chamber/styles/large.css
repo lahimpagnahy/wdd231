@@ -1,0 +1,129 @@
+/* Large CSS - Applies to screens 1024px and larger */
+@media screen and (min-width: 1024px) {
+    /* Header Adjustments */
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+    
+    header {
+        padding: 1rem 2rem;
+    }
+    
+    .logo {
+        width: 70px;
+    }
+    
+    .site-name h1 {
+        font-size: 1.6rem;
+    }
+    
+    /* Navigation */
+    #primary-nav {
+        justify-content: flex-end; /* Keep menu to the right */
+        gap: 2rem;
+        padding-right: 2rem;
+    }
+    
+    /* Main Content Layout */
+    main {
+        padding: 2rem;
+    }
+    
+    .home-main {
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-areas:
+            "hero hero hero"
+            "events weather forecast"
+            "spotlight spotlight spotlight";
+        gap: 2rem;
+    }
+    
+    .hero-section {
+        height: 500px;
+    }
+    
+    /* Adjusted widths for desktop layout */
+    .events-section {
+        grid-area: events;
+    }
+    
+    .weather-section {
+        grid-area: weather;
+    }
+    
+    .forecast-section {
+        grid-area: forecast;
+    }
+    
+    .spotlight-section {
+        grid-area: spotlight;
+    }
+    
+    /* Hero Section */
+    .hero-overlay h2 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-overlay p {
+        font-size: 1.2rem;
+    }
+    
+    .cta-button {
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+    }
+    
+    /* Events and Weather Sections */
+    .events-section, .weather-section, .forecast-section {
+        height: 100%;
+    }
+    
+    /* Spotlight Section */
+    .spotlight-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .spotlight-card {
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .spotlight-content {
+        flex: 1;
+        padding-right: 1rem;
+    }
+    
+    .spotlight-logo {
+        order: 2;
+        margin-bottom: 0;
+        margin-left: 1rem;
+    }
+    
+    /* Footer Adjustments */
+    footer {
+        padding: 2rem;
+    }
+    
+    .footer-content {
+        max-width: 1200px;
+        margin: 0 auto 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .footer-social {
+        margin: 0;
+    }
+    
+    .footer-base {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}

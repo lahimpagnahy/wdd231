@@ -1,0 +1,474 @@
+/* Base CSS - Applies to all screen sizes */
+:root {
+    --primary-color: #00334e; /* Deep Blue color theme */
+    --secondary-color: #145374;
+    --accent-color: #0a2239;
+    --text-color: #212121;
+    --background-color: #ECEFF1;
+    --header-background: #00334e; /* Deep Blue for header */
+    --header-text: #FFFFFF;
+    --footer-background: #00334e; /* Deep Blue for footer */
+    --footer-text: #FFFFFF;
+    --link-color: #1565C0;
+    --button-color: #145374;
+    --button-text: #FFFFFF;
+    --card-background: #FFFFFF;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+    --border-color: #CFD8DC;
+    
+    /* Dark mode color variables will be applied with JavaScript */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 16px;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+body {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+}
+
+h3 {
+    font-size: 1.1rem;
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--header-background);
+    color: var(--header-text);
+    padding: 1rem;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 0.5rem;
+}
+
+.site-name h1 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.site-name p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+}
+
+.dark-mode-toggle {
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: var(--accent-color);
+}
+
+#hamburger-btn {
+    background: none;
+    border: none;
+    color: var(--header-text);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+#primary-nav {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+}
+
+#primary-nav.open {
+    display: block;
+}
+
+#primary-nav li {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+#primary-nav li a {
+    color: var(--header-text);
+    text-decoration: none;
+    display: block;
+}
+
+#primary-nav li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#primary-nav li.active a {
+    font-weight: bold;
+    color: #FFD700;
+}
+
+.date-banner {
+    background-color: var(--secondary-color);
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+/* Main Content Styles */
+main {
+    padding: 1rem;
+}
+
+.home-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 51, 78, 0.6); /* Deep Blue with opacity */
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero-overlay h2 {
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--button-color);
+    color: var(--button-text);
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* Events Section */
+.events-section {
+    background-color: var(--card-background);
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px var(--card-shadow);
+}
+
+.event-card {
+    margin-top: 1rem;
+}
+
+.event-date {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.event-location {
+    font-style: italic;
+}
+
+.event-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+/* Weather Section */
+.weather-section {
+    background-color: var(--card-background);
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px var(--card-shadow);
+}
+
+.weather-card {
+    text-align: center;
+}
+
+.weather-icon-temp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.weather-icon-temp img {
+    width: 50px;
+    height: 50px;
+}
+
+.weather-icon-temp p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+#weather-description {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.weather-details {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.weather-details p {
+    margin: 0;
+}
+
+/* Forecast Section */
+.forecast-section {
+    background-color: var(--card-background);
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px var(--card-shadow);
+}
+
+.forecast-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.forecast-day {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+/* Spotlight Section */
+.spotlight-section {
+    background-color: var(--card-background);
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px var(--card-shadow);
+}
+
+.spotlight-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.spotlight-card {
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.spotlight-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+.spotlight-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.spotlight-membership {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.spotlight-membership.gold {
+    background-color: #FFD700;
+    color: #000;
+}
+
+.spotlight-membership.silver {
+    background-color: #C0C0C0;
+    color: #000;
+}
+
+.spotlight-contact {
+    font-size: 0.9rem;
+}
+
+.spotlight-contact a {
+    display: block;
+    margin-top: 0.25rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--footer-background);
+    color: var(--footer-text);
+    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.footer-logo img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.footer-name h3 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.footer-name p, .footer-contact p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+.footer-social a {
+    color: var(--footer-text);
+    font-size: 1.5rem;
+}
+
+.footer-social a:hover {
+    color: #FFD700;
+}
+
+.footer-contact a {
+    color: var(--footer-text);
+    text-decoration: underline;
+}
+
+.footer-base {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.footer-base p {
+    margin: 0.25rem 0;
+}
