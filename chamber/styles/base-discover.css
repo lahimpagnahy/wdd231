@@ -1,0 +1,107 @@
+/* Base styles for discover page (small screens: 320px-640px) */
+
+.discover {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "visitor"
+      "places";
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .visitor-info {
+    grid-area: visitor;
+    background-color: #f0f0f0;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  #visit-message {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  
+  .discover-grid {
+    grid-area: places;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "place1"
+      "place2"
+      "place3"
+      "place4"
+      "place5"
+      "place6"
+      "place7"
+      "place8";
+    gap: 1.5rem;
+  }
+  
+  .place-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .place-card h2 {
+    margin: 0;
+    padding: 1rem;
+    background-color: #003366;
+    color: white;
+    font-size: 1.3rem;
+  }
+  
+  .place-card figure {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .place-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  
+  .place-card address {
+    padding: 0.5rem 1rem;
+    font-style: normal;
+    color: #555;
+  }
+  
+  .place-card p {
+    padding: 0 1rem 1rem;
+    line-height: 1.5;
+  }
+  
+  .place-card button {
+    display: block;
+    width: calc(100% - 2rem);
+    margin: 0 1rem 1rem;
+    padding: 0.75rem;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .place-card button:hover {
+    background-color: #004c99;
+  }
+  
+  /* Apply grid areas to cards */
+  .place-card:nth-child(1) { grid-area: place1; }
+  .place-card:nth-child(2) { grid-area: place2; }
+  .place-card:nth-child(3) { grid-area: place3; }
+  .place-card:nth-child(4) { grid-area: place4; }
+  .place-card:nth-child(5) { grid-area: place5; }
+  .place-card:nth-child(6) { grid-area: place6; }
+  .place-card:nth-child(7) { grid-area: place7; }
+  .place-card:nth-child(8) { grid-area: place8; }

@@ -1,0 +1,30 @@
+/* Large screens (1025px and above) */
+@media screen and (min-width: 1025px) {
+    .discover {
+      grid-template-columns: 3fr 1fr;
+      grid-template-areas:
+        "places visitor";
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    .discover-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas:
+        "place1 place2 place3"
+        "place4 place5 place6"
+        "place7 place8 .";
+      gap: 2rem;
+    }
+    
+    .visitor-info {
+      margin-bottom: 0;
+    }
+    
+    /* Enhanced hover effect */
+    .place-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+  }

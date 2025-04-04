@@ -1,0 +1,31 @@
+/* Medium screens (641px-1024px) */
+@media screen and (min-width: 641px) {
+    .discover {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "visitor"
+        "places";
+    }
+  
+    .discover-grid {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "place1 place2"
+        "place3 place4"
+        "place5 place6"
+        "place7 place8";
+    }
+    
+    /* Hover effect for images (only on non-mobile) */
+    .place-card figure {
+      overflow: hidden;
+    }
+    
+    .place-card img {
+      transition: transform 0.5s ease;
+    }
+    
+    .place-card img:hover {
+      transform: scale(1.1);
+    }
+  }

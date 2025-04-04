@@ -1,0 +1,52 @@
+{
+    "places": [
+      {
+        "name": "Queen’s Palace",
+        "image": "images/reine.jpeg",
+        "address": "Manjakamiadana, Antananarivo 101, Madagascar",
+        "description": "The Rova is a historic royal palace located on the highest hill of Antananarivo. It offers a panoramic view of the city and a glimpse into the Merina monarchy's legacy. Ideal for history lovers and cultural tourists."
+      },
+      {
+        "name": "Analakely Market",
+        "image": "images/analakely.jpg",
+        "address": "Avenue de l’Indépendance, Analakely, Antananarivo 101, Madagascar",
+        "description": "A bustling market in the heart of the city, offering a variety of local products, crafts, and street food. Experience the vibrant culture and flavors of the region while supporting local artisans and farmers."
+      },
+      {
+        "name": "Lemur Park",
+        "image": "images/lemur.jpg",
+        "address": "PK 22, Route Nationale 1, Imerintsiatosika, Madagascar",
+        "description": "A unique wildlife park dedicated to the conservation of Madagascar's lemurs. Visitors can observe these fascinating creatures in their natural habitat while learning about the importance of biodiversity and conservation efforts."
+      },
+      {
+        "name": "Tana Water Front",
+        "image": "images/tana-w.jpg",
+        "address": "Ambodivona, Antananarivo 101",
+        "description": " A modern business and shopping center that includes restaurants, banks, boutiques, and conference spaces. It’s ideal for business lunches and relaxed meetings."
+      },
+      {
+        "name": "Tsimbazaza Zoo",
+        "image": "images/tsimbazaza-parc.jpg",
+        "address": "Tsimbazaza, Antananarivo 101, Madagascar",
+        "description": "This national zoo includes a museum and offers a good overview of Madagascar's unique fauna and flora. It’s both educational and entertaining for visitors of all ages."
+      },
+      {
+        "name": "Ambohimanga Hill",
+        "image": "images/ambohimanga-hill.jpg",
+        "address": "Ambohimanga, Madagascar",
+        "description": " A UNESCO World Heritage Site and sacred royal city, Ambohimanga is considered the spiritual heart of the Merina Kingdom. It’s ideal for cultural immersion and scenic views."
+      },
+      {
+        "name": "Is'Art Galerie",
+        "image": "images/isart.jpg",
+        "address": " Antsahavola, Antananarivo 101, Madagascar",
+        "description": "A dynamic contemporary art gallery hosting local and international artists. It’s also a cultural hub with events, exhibitions, and live music – great for networking and art lovers."
+      },
+      {
+        "name": "Lake Anosy",
+        "image": "images/lakeanosy2.jpg",
+        "address": "Lac Anosy, Antananarivo 101, Madagascar",
+        "description": " A peaceful spot in the middle of the city featuring a small lake with a central monument. It’s an iconic photo location and a place for a quiet walk or informal meetings."
+      }
+    ]
+  }
